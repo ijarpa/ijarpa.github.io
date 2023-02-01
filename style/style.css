@@ -6,6 +6,16 @@ body {
     font-family: "Montserrat";
 }
 
+#max-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #1d3557;
+}
+
 p {
     font-family: sans-serif;
 }
@@ -60,13 +70,14 @@ header {
   
   .menu-item a {
     display: block;
-    width: 200px;
+    width: 150px;
     padding: 10px 10px;
     text-decoration: none;
+    color: #1d3557;
   }
   .menu-item:hover .menu-title {
     display: block;
-    width: 200px;
+    width: 150px;
     padding: 10px 10px;
     text-decoration: none;
     background-color: #deedfc;
@@ -88,7 +99,7 @@ header {
   .sub-menu-item a {
     display: block;
     padding: 10px 10px;
-    background-color: #eee;
+    background-color: #f9f9f9;
     text-decoration: none;
   }
   .sub-menu-item:hover a {
@@ -99,7 +110,6 @@ header {
     text-decoration: none;
     transition: all 0.2s;
   }
-
 
 main {
     max-width: 1200px;
