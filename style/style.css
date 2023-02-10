@@ -255,6 +255,25 @@ footer .logo-text {
     width: 50px;
 }
 
+/* MOVIE STYLE */
+#content-movie {
+  width: 1200px;
+}
+
+#movie-img {
+  width: 500px;
+  clip-path: circle(50% at 50% 50%);
+  float: right;
+}
+
+.movie-opinion {
+  font-size: 1.2em;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+
+
 @media only screen and (max-width: 800px) {
     header {
       width: 100%; /* Ajusta el ancho del header para que ocupe toda la pantalla */
