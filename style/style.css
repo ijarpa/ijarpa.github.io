@@ -261,9 +261,18 @@ footer .logo-text {
 }
 
 #movie-img {
-  width: 500px;
+  width: 400px;
   clip-path: circle(50% at 50% 50%);
   float: right;
+  margin-top: 130px;
+}
+
+.movie-img-2 {
+  width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  padding: 30px;
 }
 
 .movie-opinion {
