@@ -203,7 +203,7 @@ ul, li {
     transition: 0.4s;
 }
 .loc-container:hover {
-    scale: 103%;
+    transform: scale(1.03);
     transition: 0.4s;
 }
 .loc-container img:hover {
@@ -499,7 +499,7 @@ footer {
     transition: all 0.2s;
 }
 .map:hover {
-    scale: 1.03;
+    transform: scale(1.03);
     transition: all 0.2s;
 }
 
@@ -705,8 +705,8 @@ footer {
         transition: all 0.2s;
     }
     .map:hover {
-        scale: 1.03;
+        transform: scale(1.03);
         transition: all 0.2s;
-    }
+      }      
     
 }
