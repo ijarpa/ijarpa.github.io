@@ -4,12 +4,17 @@ currentDate_1.setDate(currentDate_1.getDate() + 1);
 const dayOfWeek1 = currentDate_1.getDay();
 
 const currentDate_2 = new Date();
-currentDate_2.setDate(currentDate_2.getDate() + 2);
+currentDate_2.setDate(currentDate_1.getDate() + 1);
 const dayOfWeek2 = currentDate_2.getDay();
+
+const currentDate_3 = new Date();
+currentDate_3.setDate(currentDate_1.getDate() + 2);
+const dayOfWeek3 = currentDate_3.getDay();
 
 const dayName = ['Sun', 'Mon', 'Tue', 'Wedn', 'Thur', 'Fri', 'Sat'];
 const tomorrowDay = dayName[dayOfWeek1];
 const afterTomorrowDay = dayName[dayOfWeek2];
+const afterTomorrowDay2 = dayName[dayOfWeek3];
 
 const tomorrowDayElements = document.querySelectorAll('.tomorrow-day');
 
@@ -21,6 +26,12 @@ const afterTomorrowDayElements = document.querySelectorAll('.after-tomorrow-day'
 
 for (let i = 0; i < afterTomorrowDayElements.length; i++) {
   afterTomorrowDayElements[i].textContent = afterTomorrowDay;
+}
+
+const afterTomorrowDayElements2 = document.querySelectorAll('.after-tomorrow-day2');
+
+for (let i = 0; i < afterTomorrowDayElements2.length; i++) {
+  afterTomorrowDayElements2[i].textContent = afterTomorrowDay2;
 }
 
 
@@ -69,6 +80,7 @@ async function getWeatherTomorrow() {
     const response = await fetch(api_url_full_tomorrow);
     const data = await response.json();
     weatherDataTomorrow(data);
+    console.table(data);
 }
 
 getWeatherTomorrow();
@@ -101,6 +113,8 @@ const weatherDataTomorrow = (data) => {
       temp_max: temps.temp_max,
     }));
 
+    console.log(result);
+
 
     // TOMORROW
     const currentTempKelvinMax = result[0].temp_max;
@@ -128,6 +142,20 @@ const weatherDataTomorrow = (data) => {
     const weather_icon_day2 = document.querySelector('#weather-icon-afterTomorrow');
     const icon_weather_day2 = `http://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png`;
     weather_icon_day2.setAttribute('src', icon_weather_day2);
+
+    // AFTER AFTER TOMORROW
+    const currentTempKelvinMax_day3 = result[2].temp_max;
+    const currentTempCelciusMax_day3 = Math.round(currentTempKelvinMax_day3 - 273.15);
+    document.querySelector('#tomorrow-afterTemp-Max2').textContent = currentTempCelciusMax_day3;
+
+    const currentTempKelvinMin_day3 = result[2].temp_min;
+    const currentTempCelciusMin_day3 = Math.round(currentTempKelvinMin_day3 - 273.15);
+    document.querySelector('#tomorrow-afterTemp-Min2').textContent = currentTempCelciusMin_day3;
+
+    // ICON
+    const weather_icon_day3 = document.querySelector('#weather-icon-afterTomorrow2');
+    const icon_weather_day3 = `http://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png`;
+    weather_icon_day3.setAttribute('src', icon_weather_day3);
 }
 
 // weahter API for Los Angeles California 34.055188075152564, -118.25929720314062
@@ -227,8 +255,22 @@ const weatherDataTomorrowLA = (data) => {
 
   // ICON
   const weather_icon_day2 = document.querySelector('#weather-icon-afterTomorrowLA');
-  const icon_weather_day2 = `http://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png`;
+  const icon_weather_day2 = `http://openweathermap.org/img/w/${data.list[15].weather[0].icon}.png`;
   weather_icon_day2.setAttribute('src', icon_weather_day2);
+
+  // AFTER TOMORROW
+  const currentTempKelvinMax_day3 = result[1].temp_max;
+  const currentTempCelciusMax_day3 = Math.round(currentTempKelvinMax_day3 - 273.15);
+  document.querySelector('#tomorrow-afterTemp-MaxLA2').textContent = currentTempCelciusMax_day3;
+
+  const currentTempKelvinMin_day3 = result[1].temp_min;
+  const currentTempCelciusMin_day3 = Math.round(currentTempKelvinMin_day3 - 273.15);
+  document.querySelector('#tomorrow-afterTemp-MinLA2').textContent = currentTempCelciusMin_day3;
+
+  // ICON
+  const weather_icon_day3 = document.querySelector('#weather-icon-afterTomorrowLA2');
+  const icon_weather_day3 = `http://openweathermap.org/img/w/${data.list[15].weather[0].icon}.png`;
+  weather_icon_day3.setAttribute('src', icon_weather_day3);
 }
 
 
@@ -331,4 +373,18 @@ const weatherDataTomorrowSD = (data) => {
   const weather_icon_day2 = document.querySelector('#weather-icon-afterTomorrowSD');
   const icon_weather_day2 = `http://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png`;
   weather_icon_day2.setAttribute('src', icon_weather_day2);
+
+  // AFTER TOMORROW
+  const currentTempKelvinMax_day3 = result[1].temp_max;
+  const currentTempCelciusMax_day3 = Math.round(currentTempKelvinMax_day3 - 273.15);
+  document.querySelector('#tomorrow-afterTemp-MaxSD2').textContent = currentTempCelciusMax_day3;
+
+  const currentTempKelvinMin_day3 = result[1].temp_min;
+  const currentTempCelciusMin_day3 = Math.round(currentTempKelvinMin_day3 - 273.15);
+  document.querySelector('#tomorrow-afterTemp-MinSD2').textContent = currentTempCelciusMin_day3;
+
+  // ICON
+  const weather_icon_day3 = document.querySelector('#weather-icon-afterTomorrowSD2');
+  const icon_weather_day3 = `http://openweathermap.org/img/w/${data.list[15].weather[0].icon}.png`;
+  weather_icon_day3.setAttribute('src', icon_weather_day3);
 }
