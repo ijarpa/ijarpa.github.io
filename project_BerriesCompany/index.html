@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bountiful Bites Express</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="name">Bountiful Bites Express</a>
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="tourism.html">Entertainments</a></li>
+        </ul>
+      </nav>
+      <div class="social-buttons">
+        <a target="_blank" href="https://www.facebook.com/ivan.andres.jarpa/">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkxJREFUSEuNVuuZozAQk9zIJZVcUskulSypZLlKkqskVGLdN/b4FeCy/pGPAJ6HRpIhbBGA0tW40n2CUH3stzbv/y+EB/VXjiL0qd8U1LJbcW+WpAuA3xAuoF1zhfAAtQL8S/KxC0Kp96hgSScA3wAuhh7Tz1iN31oBXcmwlqd9zLylx5qAor4AzAn4IehOlhQgdbOQvL0OtNuehxktODG/gw6AVWxdtiXMDLz1I2L/x2F55iG13N0/C3pj4FJoJXm3OY09nwL5KKQcAZDuhnktqc+Tr8+BXNVVVRJ0c1oDed4kkOInQBuqi2JDMMN4KsmtWwEfTOzqikqa4dW6sIpqFCl+AazY7zBnJsPN4JP06Qwb0Wyb0iwMxsoiRVn1tvFlVZwmMiyNCJrbnFLVHiy9/yB5LQTNoEhPAac95XmKieTi72YaH6+VgedsM77GBB5SWBnCed+ofFo9MTpSkImgwwzuAi85Y31zJXluhQ4ML7p5gq6HlmBh4NRmkCH6EjAXS2g2gIwlWa1AUafqHcKzuy4lV8ZVoUnRjOy+tYfaz2YGh8ZhYnMxDlYRFe/shVbmk81uSgr2bgHNjTnDtB+BvBYxdlZBSPGE1PIuPV46cJpuBXNNFl4NtMbaMbtx809oWsVYwm7c1GLWgY+MSglsQ0wGNwoNYC2g738LhjMxSicK3+YzTWhhcatICXwGyUHLydYBktix20E2qXzQu4V/AKjHY/Yi/QL4h8GO0OND+uBMHr8kNkLbxDtK0JldaWf4ehmF+8NPlb444h+tTEsuscA4jwAAAABJRU5ErkJggg==" alt="facebook-logo"/>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/ijarpa/">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAixJREFUSEuFVoGR5CAMk6gk30muk2wlf50knWw6+VSCfkwMOBtyx8ztZglYWJLNETYIQAQh+wLUpsrzeMT1g01hyqPFML75OtWBB/O3Q1wA/K3P1ZSejj6cdxI+MiYYg0r5DWC2VQJBo+f8ODfS53+GPhL552TWmAgjS0WCNjz2L1N3dljO3eTt8aQmqYCdwAFgKQsGGUT8nqxApvPobpYmsjrARvJV4kpOW0MZJBhpBBJZiC0URXEKwHmUnUxfhfqstWVxvhwyGN8UgLuLCClXio5Okb6fgt60cZSeQdwJoIusQ+DhLpoETgR2J2lyY5k+9jcBmovrHPFOkb/oGmgjk2uQV4FLSrRCN03mwi7TXlVU1l8A3zWjTlEFdb7GIjtAsF41YG0tynkC+K86rbjoUgcDgES+jFIprwAXBgBlvcFCyyuRW3ObMBtPZe2oVTzYdBWwWNoeyCh6e7VvKfFlJ8/Smw7wILK76LTplpg8g9Om7BosEFZXNNZLs3PP9tKLioDVppeNHxkMAbK0UlisX3UNPmz6o4ucoiwtBOy0NjY6RVItyAjw6KJo00hRodF6UwfwltIzcJEvLvIfWbl2UyugUlhWRAAnCJu3bnue/fmAsPvzDGFqLvq5m8b7oFZhaEPxnoj9oga92bTXgTshXizXC+dDtkF47Ynpa9DsQk6ji75ffW1hqWSn93Zh10KL7foWI25+CvTLfLghB+HjfyM3sCs7gwRLUv8BkBZwMmJVFUsAAAAASUVORK5CYII=" alt="linkedin-logo"/>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/ijarpa/">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAArhJREFUSEuFVsFu00AQfc+uN1ioR+7pHYH4AZJ8BhIS5IoEEl/Q9A9AwLlGQuLOD8T5A8QP1Jw4cAMpabatB+16Y8/abvHJ3t3ZmffmzYwJ9xCAEIRA/IJ+4nV/NBgNzneb4QKC2sCbBmfj7wPv8flbtkcujREcYlZg9dIdiCME3TnZbadI0hdIOIdw3qFp7lWwq2BVys3NWZLn/lsz5d5bvpy5WPsSwHl//fDtHYzkSSAVRQpO7p31EbcU+ciP0gsXZi/S7gykRaCdhfcK5DLJsrIVgoYj1rrIHQL1xNIYXEouUNczkKvATUFjls0FToEqc2L3FwCmI2JwSwVEKiF/kphBfCAVJ+ZE9ppWlonJFp2U1W1ibVwGTfAeNk1Wyp+/D3w8x8e/ZbebIk3XQdZTJYSKxpy0me1RFByoVdJFYynyHMAs1NkG5Be5vv7FNHWoY1KNaXUQCWKAAChoJkux+08gXsVlzo+JyV7XV3YNwbzLDUGThXsPOQj+RyhaYrv7Jnm+IfCwp/Aficke1/v9qU+wKgC2CKIkw9VAS5HrShRZ4fLyA/Lccf2oRdC0k+802RPxDpJVpP07KYpVWdKYhVj7HsAbF6Sqj3c05u2YtDsEvaL0CGIHXkEQ2YJ8BpGngYoNBF+FvE+Iy0FUN8MchEtHHDhRViC8TNtm65Bc2TkEQaYBWXCTGENpR4BKTm3tmoQz7D+uiZW+0Hyzcw0wVo5q7yVNtjgwoSrZJzm0iv+0By2ZSD4+SU2riBCEQ/VuO20KJzgYTKgYmNa+V50PlwtmWRkjCHZuv/btmued7JrB2MyA8D7SrIK6lsxM0W3fNXDSo9Om8YWBcyjG/jwgKtR1gVo+czBwepWsx3EURf9nYMDgCJfqzHDGNRpTxA1lNdrSB2a9eaD/JDzbowbdr023ffsvzz9D3Vk2CgARIwAAAABJRU5ErkJggg=="/>
+        </a>
+        </div>
+      <button class="hamburger">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <img src="images/hero_1.jpg" alt="Hero Background" class="hero-background">
+      <img src="images/Logo_.png" alt="Company Logo" class="company-logo">
+    </div>
+  </section>
+
+  <main class="main-home">
+    <div class="container">
+        <div class="entertaiment">
+            <a href="tourism.html">
+                <img src="images/entertainment_1.png" alt="">
+            </a>
+            <a href="tourism.html">
+                <img src="images/entertainment_2.png" alt="">
+            </a>
+            <a href="tourism.html">
+                <img src="images/entertainment_3.png" alt="">
+            </a>
+            <a href="tourism.html">
+                <img src="images/entertainment_4.png" alt="">
+            </a>
+            <a href="tourism.html">
+                <img src="images/entertainment_5.png" alt="">
+            </a>
+        </div>
+        <hr class="line">
+        <section class="container">
+            <h2 class="section-title">Special offers this week</h2>
+            <section class="food-section">
+                <a href="fresh.html" class="food-box offer-1">
+                    <img src="images/placeHolder.png" data-src="images/product_1.jpg" alt="Food 1" class="food-image">
+                    <h3 class="food-name">Sunshine Blend</h3>
+                    <ul class="fruist-list">
+                        <li>Orange</li>
+                        <li>Apple</li>
+                        <li>Watermelon</li>
+                    </ul>
+                    <p class="juice-text">
+                        Treat yourself to our range of tantalizing juices, each bursting with natural goodness
+                    </p>
+                </a>
+                <a href="fresh.html" class="food-box offer-2">
+                    <img src="images/placeHolder.png" data-src="images/product_2.jpg" alt="Food 2" class="food-image">
+                    <h3 class="food-name">Berry Blast</h3>
+                    <ul class="fruist-list">
+                        <li>Raspberry</li>
+                        <li>Strawbery</li>
+                        <li>Blueberry</li>
+                    </ul>
+                    <p class="juice-text">
+                        Our Berry Blast juice is a burst of flavors that combines the sweetness of 
+                        strawberries, the tartness of raspberries, and the intensity of blueberries.
+                    </p>
+                </a>
+                <a href="fresh.html" class="food-box offer-3">
+                    <img src="images/placeHolder.png" data-src="images/product_3.jpg" alt="Food 3" class="food-image">
+                    <h3 class="food-name">Citrus Fusion Delight</h3>
+                    <ul class="fruist-list">
+                        <li>Lemon</li>
+                        <li>Pear</li>
+                        <li>Persimmon</li>
+                    </ul>
+                    <p class="juice-text">
+                        This unique blend combines the tanginess of lemon, the delicate sweetness of 
+                        pear, and the exotic taste of persimmon.
+                    </p>
+                </a>
+                <a href="fresh.html" class="food-box offer-4">
+                    <img src="images/placeHolder.png" data-src="images/product_4.jpg" alt="Food 4" class="food-image">
+                    <h3 class="food-name">Pineapple Kiwi Delight</h3>
+                    <ul class="fruist-list">
+                        <li>Pineapple</li>
+                        <li>Kiwi</li>
+                        <li>Banana</li>
+                    </ul>
+                    <p class="juice-text">
+                        The tropical flavors will transport you to sandy shores, while the vibrant colors will 
+                        brighten your day. Savor the tropical magic with every sip of this delightful drink.
+                    </p>
+                </a>
+            </section>
+        </section>
+    </div>
+    <hr class="line">
+    <h2 class="section-title">Visit us and enjoy these beautiful places!</h2>
+    <section class="locations">
+        <div class="loc-container">
+            <img class="location-img img-post-1" src="images/placeHolder.png" data-src="images/loc_carlsbad.jpg" alt="carlsbad image">
+            <!-- Location 1 -->
+            <section class="info-text info-position-1">
+                <h2>carlsbad</h2>
+                <h3>Weather</h3>
+                <div class="weather-content">
+                    <section class="today">
+                        <div class="weather">
+                            <img id="weather-icon" src="" alt="weather icon">
+                            <p><span id="current-temp"></span> °C</p>
+                        </div>
+                        <div class="weather-text">
+                            <p><span id="weather-description"></span></p>
+                            <p>Humidity: <span class="humidity"></span></p>
+                        </div>
+
+                    </section>
+                    <div class="sep"></div>
+                    <section class="forecast">
+                        <!-- Tomorrow -->
+                        <p><span class="tomorrow-day"></span></p>
+                        <div class="weather">
+                            <img id="weather-icon-tomorrow" src="" alt="weather icon">
+                            <p><span id="tomorrow-temp-Max"></span>/<span id="tomorrow-temp-Min"></span>°C</p>
+                        </div>
+                        <!-- After Tomorrow -->
+                        <p><span class="after-tomorrow-day"></span></p>
+                        <div class="weather">
+                            <img id="weather-icon-afterTomorrow" src="" alt="weather icon">
+                            <p><span id="tomorrow-afterTemp-Max"></span>/<span id="tomorrow-afterTemp-Min"></span>°C</p>
+                        </div>
+                        <!-- After after Tomorrow -->
+                        <p><span class="after-tomorrow-day2"></span></p>
+                        <div class="weather">
+                            <img id="weather-icon-afterTomorrow2" src="" alt="weather icon">
+                            <p><span id="tomorrow-afterTemp-Max2"></span>/<span id="tomorrow-afterTemp-Min2"></span>°C</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <!-- Location 2 -->
+        <div class="loc-container">
+            <img src="images/placeHolder.png" data-src="images/loc_losangeles.jpg" alt="Los Angeles image" class="location-img img-post-2">
+            <section class="info-text info-position-2">
+                <h2>Los Angeles</h2>
+                <h3>Weather</h3>
+                <div class="weather-content">
+                    <section class="today">
+                        <div class="weather">
+                            <img id="weather-icon-LA" src="" alt="weather icon">
+                            <p><span id="current-temp-LA"></span> °C</p>
+                        </div>
+                        <div class="weather-text">
+                            <p><span id="weather-description-LA"></span></p>
+                            <p>Humidity: <span class="humidityLA"></span></p>
+                        </div>
+                    </section>
+                    <div class="sep"></div>
+                    <section class="forecast">
+
+                        <p><span class="tomorrow-day"></span></p>
+                        <div class="weather">
+                            <img id="weather-icon-tomorrowLA" src="" alt="weather icon">
+                            <p><span id="tomorrow-temp-MaxLA"></span>/<span id="tomorrow-temp-MinLA"></span>°C</p>
+                        </div>
+
+                        <p><span class="after-tomorrow-day"></span></p>
+                        <div class="weather">
+                            <img id="weather-icon-afterTomorrowLA" src="" alt="weather icon">
+                            <p><span id="tomorrow-afterTemp-MaxLA"></span>/<span id="tomorrow-afterTemp-MinLA"></span>°C</p>
+                        </div>
+
+                        <p><span class="after-tomorrow-day2"></span></p>
+                        <div class="weather">
+                            <img id="weather-icon-afterTomorrowLA2" src="" alt="weather icon">
+                            <p><span id="tomorrow-afterTemp-MaxLA2"></span>/<span id="tomorrow-afterTemp-MinLA2"></span>°C</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <!-- Location 3 -->
+        <div class="loc-container">
+            <img src="images/placeHolder.png" data-src="images/loc_sandiego.jpg" alt="San Diego image" class="location-img img-post-3">
+            <section class="info-text info-position-3">
+                <h2>San Diego</h2>
+                <h3>Weather</h3>
+                <div class="weather-content">
+                    <section class="today">
+                        <div class="weather">
+                            <img id="weather-icon-SD" src="" alt="weather icon">
+                            <p><span id="current-temp-SD"></span> °C</p>
+                        </div>
+                        <div class="weather-text">
+                            <p><span id="weather-description-SD"></span></p>
+                            <p>Humidity: <span class="humiditySD"></span></p>
+                        </div>
+                    </section>
+                    <div class="sep"></div>
+                    <section class="forecast">
+
+                        <p><span class="tomorrow-day"></span></p>
+                        <div class="weather">
+                            <img id="weather-icon-tomorrowSD" src="" alt="weather icon">
+                            <p><span id="tomorrow-temp-MaxSD"></span>/<span id="tomorrow-temp-MinSD"></span>°C</p>
+                        </div>
+
+                        <p><span class="after-tomorrow-day"></span></p>
+                        <div class="weather">
+                            <img id="weather-icon-afterTomorrowSD" src="" alt="weather icon">
+                            <p><span id="tomorrow-afterTemp-MaxSD"></span>/<span id="tomorrow-afterTemp-MinSD"></span>°C</p>
+                        </div>
+
+                        <p><span class="after-tomorrow-day2"></span></p>
+                        <div class="weather">
+                            <img id="weather-icon-afterTomorrowSD2" src="" alt="weather icon">
+                            <p><span id="tomorrow-afterTemp-MaxSD2"></span>/<span id="tomorrow-afterTemp-MinSD2"></span>°C</p>
+                        </div>
+
+                    </section>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Customers -->
+    <section class="customer-review">
+        <!-- post 1 -->
+        <section class="post-review-1">
+            <div class="review-name">
+                <h3>Robert Miles</h3>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+            <section class="review-content">
+                <img src="images/customer_1.png" alt="review img">
+                <p>"Absolutely love the organic fruits and produce from Bountiful Foods! 
+                    As a health-conscious individual, I appreciate their commitment to 
+                    sourcing locally grown, fresh ingredients. The quality of the fruits I 
+                    received was outstanding, and the flavors were incredibly vibrant. 
+                    It's reassuring to know that I'm supporting local farmers and enjoying 
+                    nutritious food at the same time. I highly recommend Bountiful Foods to 
+                    anyone looking for a convenient and reliable source of organic goodness."
+                </p>
+            </section>
+        </section>
+
+        <!-- post 2 -->
+        <section class="post-review-2">
+            <div class="review-name-2">
+                <h3>Amanda Martinez</h3>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+            <section class="review-content">
+                <p>"I can't get enough of the delicious made-to-order fruit drinks from 
+                    Bountiful Foods! Not only are they incredibly refreshing, but they 
+                    also use high-quality ingredients that make each sip a true delight. 
+                    I love the customizable options, allowing me to choose my favorite 
+                    fruits and create my own flavor combinations. Whether I'm on the 
+                    go or simply enjoying a relaxing day at home, Bountiful Foods' 
+                    fruit drinks are my go-to choice. They're the perfect blend of 
+                    taste and health, and I can't recommend them enough to all the fruit 
+                    lovers out there!"
+                </p>
+                <img src="images/customer_2.png" alt="review img">
+            </section>
+        </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div class="logo-name">
+            <a href="index.html">
+                <img class="logo-footer" src="images/Logo_.png" alt="Logo">
+            </a>
+            <div class="footer-logo">Bountiful Bites Express</div>
+        </div>
+        <div class="contact-info">
+            <p>Contact us: info@bbexpress.com</p>
+            <p>Phone: 123-456-7890</p>
+            <div class="social-media">
+                <a target="_blank" href="https://www.facebook.com/ivan.andres.jarpa/">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkxJREFUSEuNVuuZozAQk9zIJZVcUskulSypZLlKkqskVGLdN/b4FeCy/pGPAJ6HRpIhbBGA0tW40n2CUH3stzbv/y+EB/VXjiL0qd8U1LJbcW+WpAuA3xAuoF1zhfAAtQL8S/KxC0Kp96hgSScA3wAuhh7Tz1iN31oBXcmwlqd9zLylx5qAor4AzAn4IehOlhQgdbOQvL0OtNuehxktODG/gw6AVWxdtiXMDLz1I2L/x2F55iG13N0/C3pj4FJoJXm3OY09nwL5KKQcAZDuhnktqc+Tr8+BXNVVVRJ0c1oDed4kkOInQBuqi2JDMMN4KsmtWwEfTOzqikqa4dW6sIpqFCl+AazY7zBnJsPN4JP06Qwb0Wyb0iwMxsoiRVn1tvFlVZwmMiyNCJrbnFLVHiy9/yB5LQTNoEhPAac95XmKieTi72YaH6+VgedsM77GBB5SWBnCed+ofFo9MTpSkImgwwzuAi85Y31zJXluhQ4ML7p5gq6HlmBh4NRmkCH6EjAXS2g2gIwlWa1AUafqHcKzuy4lV8ZVoUnRjOy+tYfaz2YGh8ZhYnMxDlYRFe/shVbmk81uSgr2bgHNjTnDtB+BvBYxdlZBSPGE1PIuPV46cJpuBXNNFl4NtMbaMbtx809oWsVYwm7c1GLWgY+MSglsQ0wGNwoNYC2g738LhjMxSicK3+YzTWhhcatICXwGyUHLydYBktix20E2qXzQu4V/AKjHY/Yi/QL4h8GO0OND+uBMHr8kNkLbxDtK0JldaWf4ehmF+8NPlb444h+tTEsuscA4jwAAAABJRU5ErkJggg==" alt="facebook-logo"/>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/ijarpa/">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAixJREFUSEuFVoGR5CAMk6gk30muk2wlf50knWw6+VSCfkwMOBtyx8ztZglYWJLNETYIQAQh+wLUpsrzeMT1g01hyqPFML75OtWBB/O3Q1wA/K3P1ZSejj6cdxI+MiYYg0r5DWC2VQJBo+f8ODfS53+GPhL552TWmAgjS0WCNjz2L1N3dljO3eTt8aQmqYCdwAFgKQsGGUT8nqxApvPobpYmsjrARvJV4kpOW0MZJBhpBBJZiC0URXEKwHmUnUxfhfqstWVxvhwyGN8UgLuLCClXio5Okb6fgt60cZSeQdwJoIusQ+DhLpoETgR2J2lyY5k+9jcBmovrHPFOkb/oGmgjk2uQV4FLSrRCN03mwi7TXlVU1l8A3zWjTlEFdb7GIjtAsF41YG0tynkC+K86rbjoUgcDgES+jFIprwAXBgBlvcFCyyuRW3ObMBtPZe2oVTzYdBWwWNoeyCh6e7VvKfFlJ8/Smw7wILK76LTplpg8g9Om7BosEFZXNNZLs3PP9tKLioDVppeNHxkMAbK0UlisX3UNPmz6o4ucoiwtBOy0NjY6RVItyAjw6KJo00hRodF6UwfwltIzcJEvLvIfWbl2UyugUlhWRAAnCJu3bnue/fmAsPvzDGFqLvq5m8b7oFZhaEPxnoj9oga92bTXgTshXizXC+dDtkF47Ynpa9DsQk6ji75ffW1hqWSn93Zh10KL7foWI25+CvTLfLghB+HjfyM3sCs7gwRLUv8BkBZwMmJVFUsAAAAASUVORK5CYII=" alt="linkedin-logo"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="update-info">
+        <p>
+            &#169; <span class="year"> </span> <b>Ivan A. Jarpa</b> | WDD 230 Project
+        </p>
+        <p class="modification-info">
+            Last Updated: <span class="date-modification">2023</span>
+        </p>
+    </div>
+  </footer>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/scriptWeather.js"></script>
+  <script src="scripts/lazyload.js"></script>
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const offer1 = document.querySelector('.offer-1');
+            const offer2 = document.querySelector('.offer-2');
+            const offer3 = document.querySelector('.offer-3');
+            const offer4 = document.querySelector('.offer-4')
+
+            offer1.addEventListener('click', function() {
+                localStorage.setItem('clicked', 'off1');
+            });
+            offer2.addEventListener('click', function() {
+                localStorage.setItem('clicked', 'off2');
+            });
+            offer3.addEventListener('click', function() {
+                localStorage.setItem('clicked', 'off3');
+            });
+            offer4.addEventListener('click', function() {
+                localStorage.setItem('clicked', 'off4');
+            });
+        });
+  </script>
+</body>
+
+</html>

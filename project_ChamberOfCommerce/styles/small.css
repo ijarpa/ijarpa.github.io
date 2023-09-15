@@ -1,0 +1,204 @@
+/* ######################################################################## */
+/* SMALL STYLE */
+@media (max-width: 760px) {
+    header {
+        padding: 10px 0;
+    }
+    #header-title p {
+        display: none;
+    }
+    #header-title h1 {
+        text-align: center;
+    }
+    .logo-img {
+        width: 70px;
+    }
+    .header-icons {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        z-index: 1;
+    }
+    .navigation {
+        margin-top: 25px;
+    }
+    .navigation li {
+        padding: 8px 0 8px 0;
+    }
+    .navigation a {
+        font-size: 0.8em;
+    }
+    .fixed-navigation {
+        top: -28px;
+    }
+
+    /* main */
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px repeat(3, 200px) 400px;
+        grid-gap: 10px;
+    }
+    .post-box {
+        grid-column: 1/2;
+    }
+    /* hero */
+    .hero-post-1 {
+        grid-row: 1/2;
+    }
+    .hero-content {
+        width: 80%;
+    }
+    .hero-content h2{
+        font-size: 1em;
+    }
+
+    .hero-post-2 {
+        padding: 10px 10px;
+    }
+    .news-content h2 {
+        font-size: 0.9em;
+        margin: 10px auto;
+    }
+    .news-content p {
+        padding: 5px;
+        font-size: 0.80em;
+    }
+    .news-content {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    /* Left 2 weather */
+    .left-post-1 {
+        grid-row: 2/3;
+    }
+    .left-post-2 {
+        grid-row: 3/4;
+    }
+    .hero-post-2 {
+        grid-row: 4/5;
+    }
+    
+    .left-post-2 img {
+        width: 24%;
+        margin: 0 20px;
+        align-self: center; 
+        justify-self: start; 
+    }
+    .weather-degree {
+        margin: 0 20px;
+        align-self: center; 
+        justify-self: end; 
+    }
+    .weather-text {
+        margin: auto;
+    }
+
+    /* left 3*/
+    .left-post-3 {
+        display: none;
+    }
+
+
+    .right {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-info {
+        text-align: center;
+    }
+    .logo-img-footer {
+        margin: auto;
+    }
+    footer hr {
+        margin: 20px 0;
+    }
+    .copyright div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .modification-info {
+        grid-column: 1/2;
+    }
+
+    /* Discover page */
+    .title-content {
+        font-size: 0.8em;
+    }
+    .title-content h1 {
+        margin: 0;
+    }
+
+    .discover-info {
+        grid-template-columns: 1fr;
+    }
+    .discover-info section {
+        margin-left: 20px;
+    }
+
+    .discover-img {
+        height: 300px;
+    }
+    .discover-img:hover {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    /* ######################################################################## */
+    /* JOIN PAGE */
+
+    .form-title h2 {
+        font-size: 1.2em;
+    }
+
+    /* ######################################################################## */
+    /* THANK YOU PAGE */
+    .thankyou {
+        margin: 150px auto;
+    }
+    .thankyou h1 {
+        font-size: 2.4em;
+    }
+    .thankyou h2 {
+        font-size: 1em;
+    }
+
+    /* ######################################################################## */
+    /* DISCOVERY PAGE */
+    .post-directory{
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    /* discovery page list */
+    .post-box-directory-list {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        box-shadow: none;
+        border: 1px solid var(--header-bg-color);
+        border-radius: 0px;
+    }
+    .company-name-list {
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    /* ######################################################################## */
+    /* CONTACT PAGE */
+    .contact th, td {
+        font-size: 1em;
+        padding: 5px;
+    }
+}

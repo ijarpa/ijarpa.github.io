@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANTI PAPELERÍA</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">\
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/Logo Vanti.jpg" alt="Logo">
+                <h2><span class="logo-name">Vanti</span> Papelería</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#agendas">Agendas</a></li>
+                    <li><a href="#planners">Planners</a></li>
+                    <li><a href="#otros">Otros Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="instagram-link">
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="images/placeholder.png" alt="Hero Image">
+        <div class="hero-text">
+            <h1>Nombre de la Empresa</h1>
+            <p>Tu tienda de productos favoritos</p>
+        </div>
+    </div>
+
+    <main> <!-- Contenido de la página -->
+
+
+        <div class="cards-products content">
+            <div>
+                <h3 class="category-title">
+                    Busca tu producto ideal por categoría
+                </h3>
+                <hr>
+               <!-- filters -->
+                <div class="filters">
+                    <span class="filter-item active-filter" data-filter="all">Todos</span>
+                    <span class="filter-item" data-filter="planner">Planners</span>
+                    <span class="filter-item" data-filter="pediatrico">Pediatricos</span>
+                    <span class="filter-item" data-filter="otros">Marcadores</span>
+                </div>
+            </div>
+            <!-- cards de productos -->
+            <div class="cards"></div>
+        </div>
+
+        <!-- blog section -->
+        <section class="blog-section">
+            <img src="images/blog_1.jpg" alt="blog image">
+            <p>Recuerda ajustar los valores en las propiedades transform, clip-path y las coordenadas 
+                de polygon() según tus necesidades para lograr el efecto deseado.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img class="footer-logo-img" src="images/Logo Vanti.jpg" alt="Logo">
+            </div>
+            <div class="footer-contact">
+                <p>Dirección: Calle Principal, Ciudad</p>
+                <p>Teléfono: (123) 456-7890</p>
+            </div>
+            <p>&copy; 2023 Nombre de la Empresa</p>
+            <div class="footer-links">
+                <a href="#home">Volver arriba</a>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABDFJREFUWEe1WEGO2zYUfV/OnKII6kHRRbvoIkDX9dygbZBF0MXMHGIwpOx2PJixSDeHcIB01SIFeoLxrIMu26ySOIuil3D4C0qUTYmkJAeoAMOGRJOP77///qcI7YsAcHB3d6PncTnOH5P67Q9sj3GLRf56wMwEdvtIQ0492d+ncjP/69VcrAbdXLIbUPl0SGB8Yu3OWosNiVUkbuSj88XThiSkGIMxBvBNjNLYFrIse2+M2Wit1ztluYFdaugMWZ7nZ8y8GhRXmwxpEWyY+bnW+jo6l4uMx1BzmBBiTEQrgCeMjxBbGpwFdqK13qSYjipMSnkHYDKImUMGVUDXSqmTKKCYhg8K0xAwPlvuNxGdF0XxPOZbwZRSyncArIgDTUTmdk6aEA/znIH7Kvz7ORnYaKWOY74chEwKWXm1W7386hRsAmYl4nM7lRBiAqI7H7bSyrpF4wq21ReuPTgGM+Y2tS31NgmyLJsYYz4lorlbZaMsCwTkMsxWJ+51w472GqqcoQ9QvVA6UwhCXLoMLZPCZpP9BAni66imKUh7IcSVt8OYPnYZcnFx8dnR0dHXAL7k6vobwCut9dvaNhiYpKyJmedNXyIkAGGecriSmaVe5zL/yhgzJ9B3vhky4+WDowdXtzc3fzlQNkFaly0zBJSAltelWGsHD0qEY8gXci1Z57Tns9ns2BjzjJkfVys1FU9EvxHRxWJRvBfickWgs5iDVwy1ALWxhyHbL1fHXEjxhEC/RjbuE/tYKfW7zS4isiYbDg9CBj9kFVddGmLmY2v5UsqfAFx3OQEzz7TWi3TYbMQ8hhzcQG8xhuqt1WkqpZwBuOkyaSLKi6JQ0vlPGNgakCu2qeLaB2ip9VpI+T2Al3v5NB3UCpY/mG+XPy//6LKRMMsaIavCf9mR9rWop9PpQ2PMEsDTHXt+lWH+JRuNxGKx+EcIsSKis2EaqtPea5pCQG6qigTbOpzbhms2+/Hz7YftFQE/tBZ7MRqNrm8Xt2/EZVgu/LFRhlJZ1iHYqhwAmE6nn2y320dZln1BRNYYXxPRn0VR/GufSynuGLQzxvacvSGzk+TT/IwNr7qbv5Kpk6XWm1j7LYUYA3QHKlvepk15Ew8tHUnfaLFpQa2zLLu3fbOrV6d2TLP0pLuTRnGt0z7WzBMoYvexAtDVQidMwWOo9rV2wx8cNaVw7WtP3PZLpgY277f7KqVU4IPRQtz2jv4GrcsiW7Bry6oa/aoX2l2xw4Tj79AmfzCZ1eLpJj+1N1uDAJwGAu0lowcaY620OkkeUFOH5vq+C98pGJNdC/FRMeQNM9IHxXKjA89/rqRYxmzfPLZ9czMTOmm7j2kl9c4n0V1GeIucyXujt2sDu985NWXd0Hjnu6rB6/cPTI2oQ9YnpPb/U68u2luNnLlatwJkXsgORXUoD5GYR5b8D2L0aExTez3VAAAAAElFTkSuQmCC"/>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/products.js"></script>
+    <script src="scripts/filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Raleway:wght@200&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(36, 52, 143);
+  margin: 0;
+}
+
+header {
+  background-color: rgb(36, 52, 143);
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  color: #F9F9F9;
+}
+
+img {
+  width: 300px;
+}
+
+#pokeball {
+  width: 150px;
+  display: flex;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F9F9F9;
+}
+select {
+  margin: 20px 0;
+  font-family: 'Montserrat';
+  font-size: 1.4em;
+}
+#app {
+  max-width: 300px;
+  margin: auto;
+}
+
+#app p {
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+.name-poke {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+.name-ability {
+  margin-left: 50px;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+footer {
+  background-color: rgb(36, 52, 143);
+  align-items: center;
+  font-size: 2em;
+  color: #F9F9F9;
+  margin: 100px auto;
+  text-align: center;
+}
+
+
+@media (max-width: 1280px) {
+  header img {
+    width: 40%;
+  }
+  header h1 {
+    font-size: 1.2em;
+  }
+  main h2 {
+    font-size: 1.2em;
+  }
+  #pokeball {
+    width: 25%;
+  }
+  #app p {
+    font-size: 1.2em;
+    padding: 5px;
+  }
+}

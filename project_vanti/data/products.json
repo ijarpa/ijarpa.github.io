@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Planner 1",
+        "id": 1,
+        "family": "planner",
+        "price": 15000,
+        "description": "Puedes comenzar a usarla el mes que quieras!",
+        "specifications": {
+            "sheets": 11.4,
+            "paper": 0.3,
+            "cover": 0.4,
+            "ring": 52
+        },
+        "owner": "Vanti Papelería",
+        "image": "./images/agenda_1.png"
+    },
+    {
+        "name": "Planner 2",
+        "id": 2,
+        "family": "planner",
+        "price": 12000,
+        "description": "Puedes comenzar a usarla el mes que quieras!",
+        "specifications": {
+            "sheets": 11.4,
+            "paper": 0.3,
+            "cover": 0.4,
+            "ring": 52
+        },
+        "owner": "Vanti Papelería",
+        "image": "./images/agenda_2.png"
+    },
+    {
+        "name": "Planner 3",
+        "id": 3,
+        "family": "planner",
+        "price": 16000,
+        "description": "Puedes comenzar a usarla el mes que quieras!",
+        "specifications": {
+          "sheets": 11.4,
+          "paper": 0.3,
+          "cover": 0.4,
+          "ring": 52
+        },
+        "owner": "Vanti Papelería",
+        "image": "./images/agenda_2.png"
+    },
+    {
+        "name": "Cuaderno Pediatrico 1",
+        "id": 4,
+        "family": "pediatrico",
+        "price": 9900,
+        "description": "Puedes comenzar a usarla el mes que quieras!",
+        "specifications": {
+            "sheets": 11.4,
+            "paper": 0.3,
+            "cover": 0.4,
+            "ring": 52
+        },
+        "owner": "Vanti Papelería",
+        "image": "./images/agenda_2.png"
+    },
+    {
+        "name": "Cuaderno Pediatrico 2",
+        "id": 5,
+        "family": "pediatrico",
+        "price": 10000,
+        "description": "Puedes comenzar a usarla el mes que quieras!",
+        "specifications": {
+            "sheets": 11.4,
+            "paper": 0.3,
+            "cover": 0.4,
+            "ring": 52
+        },
+        "owner": "Vanti Papelería",
+        "image": "./images/agenda_2.png"
+    },
+    {
+        "name": "Marcadores de Página",
+        "id": 6,
+        "family": "otros",
+        "price": 5000,
+        "description": "Puedes comenzar a usarla el mes que quieras!",
+        "specifications": {
+          "sheets": 11.4,
+          "paper": 0.3,
+          "cover": 0.4,
+          "ring": 52
+        },
+        "owner": "Vanti Papelería",
+        "image": "./images/agenda_2.png"
+    }
+]

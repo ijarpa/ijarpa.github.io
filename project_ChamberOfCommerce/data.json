@@ -1,0 +1,94 @@
+{
+    "companies": [
+        {
+            "name": "Pacific Seafoods",
+            "address": "123 Seafood Avenue, Fisher's Port, Southern Chile",
+            "phone": "+1 234-567-8901",
+            "website": "https://www.pacificseafoods.com",
+            "image": "pacificseafood.png",
+            "membership_level": "Gold",
+            "description": "Pacific Seafoods is a leading supplier of fresh seafood sourced directly from the Pacific Ocean. We are committed to sustainable fishing practices and delivering the highest quality seafood products to our customers.",
+            "specialization": "Fish Processing, Seafood Distribution, Sustainable Fishing"
+        },
+        {
+            "name": "EcoTrek Tours",
+            "address": "456 Adventure Road, Natureville, Southern Chile",
+            "phone": "+1 901-234-5678",
+            "website": "https://www.ecotrektours.com",
+            "image": "ecotrek.png",
+            "membership_level": "Silver",
+            "description": "EcoTrek Tours offers eco-friendly and immersive adventure tours in the stunning natural landscapes of Southern Chile. Join us to explore breathtaking trails, discover hidden gems, and experience the wonders of nature.",
+            "specialization": "Ecotourism, Hiking, Nature Exploration"
+        },
+        {
+            "name": "GreenThumb Farms",
+            "address": "789 Harvest Lane, Agrotown, Southern Chile",
+            "phone": "+1 345-678-9012",
+            "website": "https://www.greenthumbfarms.com",
+            "image": "greenthumb.png",
+            "membership_level": "Bronze",
+            "description": "GreenThumb Farms is a renowned agricultural enterprise specializing in organic farming and sustainable crop cultivation. We take pride in delivering fresh, pesticide-free produce to local markets and promoting healthy living.",
+            "specialization": "Organic Farming, Crop Cultivation, Sustainable Agriculture"
+        },
+        {
+            "name": "Coastal Adventures",
+            "address": "987 Beach Boulevard, Beachtown, Southern Chile",
+            "phone": "+1 210-987-6543",
+            "website": "https://www.coastaladventures.com",
+            "image": "coastaladventure.png",
+            "membership_level": "Gold",
+            "description": "Coastal Adventures offers exciting water-based activities and coastal tours along the stunning shores of Southern Chile. Whether you seek surfing, kayaking, or simply enjoying the beach, we guarantee an unforgettable experience.",
+            "specialization": "Water Sports, Coastal Tours, Beach Activities"
+        },
+        {
+            "name": "Harvest AgriTech",
+            "address": "321 Technology Park, Cropville, Southern Chile",
+            "phone": "+1 543-210-9876",
+            "website": "https://www.harvestagritech.com",
+            "image": "harvest.png",
+            "membership_level": "Silver",
+            "description": "Harvest AgriTech is a technology-driven agricultural solutions provider. We develop innovative farming technologies, precision irrigation systems, and data analytics tools to optimize crop yields and promote sustainable farming practices.",
+            "specialization": "AgTech Solutions, Precision Irrigation, Farming Analytics"
+        },
+        {
+            "name": "Sunrise Winery",
+            "address": "753 Vineyard Lane, Winetown, Southern Chile",
+            "phone": "+1 345-678-9012",
+            "website": "https://www.sunrisewinery.com",
+            "image": "sunrise.png",
+            "membership_level": "Gold",
+            "description": "Sunrise Winery is a family-owned vineyard and winery dedicated to producing exceptional wines. We cultivate the finest grapes in the region and offer visitors a delightful wine-tasting experience.",
+            "specialization": "Wine Production, Vineyard Tours, Wine Tastings"
+        },
+        {
+            "name": "Tech Solutions Inc.",
+            "address": "987 Innovation Road, Techville, Southern Chile",
+            "phone": "+1 210-987-6543",
+            "website": "https://www.techsolutions.com",
+            "image": "techsolutions.png",
+            "membership_level": "Silver",
+            "description": "Tech Solutions Inc. is a technology consulting firm specializing in digital transformation, software development, and IT infrastructure services. We help businesses leverage the power of technology for growth and innovation.",
+            "specialization": "Digital Transformation, Software Development, IT Consulting"
+        },
+        {
+            "name": "Southern Adventure Tours",
+            "address": "456 Explorer Avenue, Adventurville, Southern Chile",
+            "phone": "+1 543-210-9876",
+            "website": "https://www.southernadventures.com",
+            "image": "adventure.jpg",
+            "membership_level": "Bronze",
+            "description": "Southern Adventure Tours offers thrilling outdoor experiences for nature enthusiasts. Explore the diverse landscapes of Southern Chile through our hiking, camping, and wildlife observation tours.",
+            "specialization": "Outdoor Adventures, Hiking, Wildlife Tours"
+        },
+        {
+            "name": "Gourmet Delights",
+            "address": "321 Foodie Boulevard, Culinarytown, Southern Chile",
+            "phone": "+1 678-901-2345",
+            "website": "https://www.gourmetdelights.com",
+            "image": "gourmet.jpeg",
+            "membership_level": "Gold",
+            "description": "Gourmet Delights is a premium food and beverage company offering a wide range of culinary delights. From gourmet chocolates to artisanal cheeses, we provide exquisite products for discerning palates.",
+            "specialization": "Gourmet Foods, Artisanal Products, Culinary Experiences"
+        }
+    ]
+}
