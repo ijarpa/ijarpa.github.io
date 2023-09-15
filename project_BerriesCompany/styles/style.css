@@ -194,6 +194,7 @@ ul, li {
     object-fit: cover;
     object-position: center;
     filter: brightness(40%);
+    padding: 10px 0;
     /* filter: blur(5px) ; */
 }
 .loc-container {
