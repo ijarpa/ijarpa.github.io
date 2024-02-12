@@ -122,10 +122,13 @@ body {
 }
 
 .home-portfolio {
+    margin: 0;
+    padding: 0;
     height: 85vh;
-    background: var(--background-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background: url('/images/bigdata2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
     align-items: center;
     padding: 0 10%;
 }
@@ -167,4 +170,42 @@ footer {
 .home-sci-portfolio a {
     color: var(--text-primary-color);
     padding-left: 20px;
+}
+
+
+
+
+@media (max-width: 760px) {
+    .home-content {
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 25px;
+        padding: 10px;
+    }
+    .home-content h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .home-content h3 {
+        font-size: 25px;
+        font-weight: 400px;
+        color: #0096c7;
+    }
+    
+    .home-content p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .list-img {
+        display: none;
+    }
+
+    .list ul li a {
+        font-size: 20px;
+    }
+
+    .home-portfolio {
+        padding: 0 4%;
+    }
 }
