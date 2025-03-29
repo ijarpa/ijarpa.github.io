@@ -1,30 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
-	font-family: 'Poppins', sans-serif;
-	margin: 0;
-	padding: 0;
-	scroll-behavior: smooth;
-	scroll-padding-top: 2rem;
-	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
 }
 
 /* variables */
 :root {
-	--container-color: #f3f3f3;
+    --container-color: #f3f3f3;
     --main-color: #7ddcd3;
     --main-color-2: #d7eceb;
     --dark-main-color: #13676b;
-	--second-color: #e99f9f;
-	--text-color: #212121;
+    --second-color: #e99f9f;
+    --text-color: #212121;
     --text-color-2: #303030;
-	--bg-color: #fafafa;
+    --bg-color: #fafafa;
 }
 ::selection{
-	color: var(--bg-color);
-	background-color: var(--main-color);
+    color: var(--bg-color);
+    background-color: var(--main-color);
 }
-
 
 body {
     margin: 0;
@@ -54,7 +53,7 @@ body {
 }
 
 .logo img {
-    width: 70px;
+    width: 100px;
     display: block;
     border-radius: 50%;
 }
@@ -62,8 +61,7 @@ body {
 nav ul {
     list-style: none;
     display: flex;
-
-    margin: 0;
+    margin: 50px;
     padding: 0;
 }
 
@@ -82,6 +80,9 @@ nav a {
     color: var(--text-color);
 }
 
+.main-menu {
+    margin-right: 20px; /* Añadir margen a la derecha */
+}
 
 .instagram-link img {
     width: 30px;
@@ -210,7 +211,6 @@ hr {
     font-size: .8em;
 }
 
-
 /* blog section */
 .blog-section {
     width: 100%;
@@ -219,8 +219,6 @@ hr {
     text-align: center;
     background-color: var(--dark-main-color);
 }
-  
-
 
 /* Footer */
 footer {
