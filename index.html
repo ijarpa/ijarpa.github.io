@@ -1,185 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Meta tags SEO y responsive -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Iván Jarpa - Senior Data Analyst & Finance Expert. BI para Todos. Automatización, Dashboards y Modelado de Datos.">
-    <meta name="keywords" content="BI para Todos, Iván Jarpa, Data Analyst, Power BI, SQL, Python, Automatización, Finanzas, Analytics Engineering, Portafolio">
-    <meta name="author" content="Iván Jarpa">
-    <title>BI para Todos | Iván Jarpa - Senior Data Analyst</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- FontAwesome -->
+    <meta name="description" content="Iván Jarpa - Senior Data Analyst & Finance Expert. Automatización, Dashboards y Modelado de Datos para empresas.">
+    <title>Iván Jarpa | BI para Todos - Senior Data Analyst</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- CSS principal -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- NAVBAR -->
+
     <header class="navbar">
         <nav class="container nav-content">
-            <a href="#" class="logo"><span class="logo-text">BI para Todos</span></a>
+            <a href="#" class="logo">
+                <i class="fa-solid fa-chart-simple logo-icon"></i>
+                BI para Todos
+            </a>
+            
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <a href="#contacto" class="btn cta-nav">Hablemos</a>
-            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+
+            <div class="nav-actions">
+                <a href="#contacto" class="btn btn-primary">Hablemos</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
         </nav>
     </header>
-    <script defer src="js/main.js"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-        <!-- HERO SECTION -->
-        <section class="hero hero-bg-overlay" id="inicio">
-            <div class="hero-overlay"></div>
-            <div class="hero-content-centered">
-                <h1>Tus Datos Financieros, Transformados en Estrategia.</h1>
-                <p class="hero-subtitle">
-                    Consultoría en Power BI y Analytics para empresas que buscan decisiones inteligentes.
-                </p>
-                <a href="#servicios" class="btn btn-accent">Ver Servicios</a>
-            </div>
-            <div class="hero-cards">
-                <div class="hero-card">
-                    <span class="hero-card-icon">
-                        <!-- Icono gráfico (ejemplo: chart bar) -->
-                        <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><rect x="6" y="18" width="6" height="12" rx="2" fill="#0077B6"/><rect x="15" y="10" width="6" height="20" rx="2" fill="#0B2545"/><rect x="24" y="4" width="6" height="26" rx="2" fill="#0077B6"/></svg>
-                    </span>
-                    <h3>Visualización de Datos</h3>
-                </div>
-                <div class="hero-card">
-                    <span class="hero-card-icon">
-                        <!-- Icono engranaje -->
-                        <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><circle cx="18" cy="18" r="10" stroke="#0077B6" stroke-width="2"/><rect x="14" y="10" width="8" height="16" rx="2" fill="#0B2545"/></svg>
-                    </span>
-                    <h3>Automatización de Procesos</h3>
-                </div>
-                <div class="hero-card">
-                    <span class="hero-card-icon">
-                        <!-- Icono birrete/escuela -->
-                        <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><path d="M18 8L32 14L18 20L4 14L18 8Z" fill="#0077B6"/><rect x="12" y="20" width="12" height="6" rx="2" fill="#0B2545"/></svg>
-                    </span>
-                    <h3>Capacitación Expertos</h3>
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <h1>Tus Datos Financieros, <br><span class="text-accent">Transformados en Estrategia.</span></h1>
+                <p>Ayudo a gerencias y empresas a automatizar reportes y tomar decisiones inteligentes con Power BI, SQL y Python.</p>
+                <div class="hero-btns">
+                    <a href="#servicios" class="btn btn-accent">Ver Soluciones</a>
+                    <a href="#portafolio" class="btn btn-outline-light">Ver Proyectos</a>
                 </div>
             </div>
-        </section>
+        </div>
 
-    <!-- SOBRE MÍ -->
-    <section class="about" id="sobre-mi">
-        <div class="container about-content">
-            <h2>Sobre Mí</h2>
-            <p>"Soy un profesional híbrido. Comencé como Contador Auditor, pero descubrí que los datos podían contar mucho más que solo balances. Hoy ayudo a empresas a anticipar tendencias y optimizar decisiones mediante Analytics Engineering & Business Intelligence"</p>
-            <div class="skills">
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">dbt</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Excel Avanzado</span>
+        <div class="hero-cards-container container reveal">
+            <div class="hero-card">
+                <div class="icon-box">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <h3>Visualización de Datos</h3>
+                <p>Dashboards interactivos claros.</p>
+            </div>
+            <div class="hero-card">
+                <div class="icon-box">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+                <h3>Automatización</h3>
+                <p>Procesos sin intervención manual.</p>
+            </div>
+            <div class="hero-card">
+                <div class="icon-box">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3>Capacitación</h3>
+                <p>Formación para equipos.</p>
             </div>
         </div>
     </section>
 
-    <!-- SERVICIOS -->
-    <section class="services" id="servicios">
+    <section class="section about" id="sobre-mi">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <span class="badge">Mi Perfil</span>
+                <h2>De Contador Auditor a <span class="text-primary">Data Expert</span></h2>
+                <p class="lead">"Soy un profesional híbrido. Entiendo los balances financieros y sé cómo programar la tecnología para optimizarlos."</p>
+                <p>Comencé en auditoría, pero descubrí que los datos podían contar mucho más. Hoy ayudo a empresas a anticipar tendencias mediante Analytics Engineering.</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-pill"><i class="fa-solid fa-bolt"></i> Power BI</span>
+                    <span class="tech-pill"><i class="fa-solid fa-database"></i> SQL</span>
+                    <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="tech-pill"><i class="fa-solid fa-cloud"></i> Azure</span>
+                    <span class="tech-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+                </div>
+            </div>
+            <div class="about-image reveal delay-200">
+                <div class="image-frame">
+                    <img src="https://placehold.co/500x600/0B2545/FFFFFF?text=Ivan+Jarpa" alt="Iván Jarpa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services-section" id="servicios">
         <div class="container">
-            <h2>Servicios</h2>
+            <div class="section-header reveal">
+                <h2>Mis Servicios</h2>
+                <p>Soluciones técnicas enfocadas en resultados de negocio.</p>
+            </div>
             <div class="services-grid">
-                <article class="service-card">
-                    <i class="fa-solid fa-gears service-icon"></i>
+                <article class="service-card reveal">
+                    <i class="fa-solid fa-robot service-icon"></i>
                     <h3>Automatización de Reportes</h3>
-                    <p>Ahorra horas de trabajo manual automatizando tus reportes financieros y operativos.</p>
+                    <p>Elimina el "Excel manual". Ahorra horas automatizando tus reportes financieros y operativos recurrentes.</p>
                 </article>
-                <article class="service-card">
+                <article class="service-card reveal delay-100">
                     <i class="fa-solid fa-chart-line service-icon"></i>
                     <h3>Dashboards Financieros</h3>
-                    <p>Visualiza tus KPIs en tiempo real para una toma de decisiones ágil y fundamentada.</p>
+                    <p>KPIs en tiempo real. Control de gestión, flujo de caja y P&L visualizados para decisiones ágiles.</p>
                 </article>
-                <article class="service-card">
+                <article class="service-card reveal delay-200">
                     <i class="fa-solid fa-chalkboard-user service-icon"></i>
-                    <h3>Consultoría & Capacitación</h3>
-                    <p>Formación en Power BI y SQL para equipos (BI para Todos).</p>
-                </article>
-                <article class="service-card">
-                    <i class="fa-solid fa-database service-icon"></i>
-                    <h3>Modelado de Datos</h3>
-                    <p>Arquitecturas de datos robustas y escalables.</p>
+                    <h3>Consultoría & Training</h3>
+                    <p>Capacitación "In-Company" en Power BI y SQL. Eleva el nivel técnico de tu equipo financiero.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- PORTAFOLIO -->
-    <section class="portfolio" id="portafolio">
+    <section class="section portfolio-section" id="portafolio">
         <div class="container">
-            <h2>Portafolio</h2>
+            <div class="section-header reveal">
+                <span class="badge">Casos de Éxito</span>
+                <h2>Proyectos Destacados</h2>
+            </div>
+            
             <div class="portfolio-grid">
-                <!-- Proyecto 1 -->
-                <article class="portfolio-card">
-                    <img src="images/placeholder1.jpg" alt="Dashboard de Control de Gestión" class="portfolio-img">
-                    <div class="portfolio-info">
-                        <h3>Dashboard de Control de Gestión</h3>
-                        <div class="portfolio-tags">
-                            <span>Power BI</span>
-                            <span>DAX</span>
+                <article class="project-card reveal">
+                    <div class="project-img-wrapper">
+                        <img src="https://placehold.co/600x400/F1F5F9/0B2545?text=Dashboard+Gestion" alt="Dashboard">
+                        <div class="overlay-link">
+                           <a href="#" class="btn-view"><i class="fa-solid fa-eye"></i> Ver Detalles</a>
                         </div>
                     </div>
-                </article>
-                <!-- Proyecto 2 -->
-                <article class="portfolio-card">
-                    <img src="images/placeholder2.jpg" alt="Automatización de Tesorería" class="portfolio-img">
-                    <div class="portfolio-info">
-                        <h3>Automatización de Tesorería</h3>
-                        <div class="portfolio-tags">
-                            <span>Python</span>
-                            <span>SQL</span>
-                        </div>
+                    <div class="project-info">
+                        <span class="project-cat">Finanzas</span>
+                        <h3>Control de Gestión & KPIs</h3>
+                        <div class="tags"><span>Power BI</span><span>DAX</span></div>
                     </div>
                 </article>
-                <!-- Proyecto 3 -->
-                <article class="portfolio-card">
-                    <img src="images/placeholder3.jpg" alt="Análisis de Ventas Retail" class="portfolio-img">
-                    <div class="portfolio-info">
+
+                <article class="project-card reveal delay-100">
+                    <div class="project-img-wrapper">
+                        <img src="https://placehold.co/600x400/F1F5F9/0B2545?text=Automatizacion+Tesoreria" alt="Tesorería">
+                        <div class="overlay-link"><a href="#" class="btn-view"><i class="fa-solid fa-eye"></i> Ver Detalles</a></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Automatización</span>
+                        <h3>Tesorería y Flujo de Caja</h3>
+                        <div class="tags"><span>Python</span><span>SQL</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal delay-200">
+                    <div class="project-img-wrapper">
+                        <img src="https://placehold.co/600x400/F1F5F9/0B2545?text=Ventas+Retail" alt="Retail">
+                        <div class="overlay-link"><a href="#" class="btn-view"><i class="fa-solid fa-eye"></i> Ver Detalles</a></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Comercial</span>
                         <h3>Análisis de Ventas Retail</h3>
-                        <div class="portfolio-tags">
-                            <span>Power BI</span>
-                            <span>Excel</span>
-                        </div>
+                        <div class="tags"><span>Power BI</span><span>Excel</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-img-wrapper">
+                        <img src="https://placehold.co/600x400/F1F5F9/0B2545?text=People+Analytics" alt="RRHH">
+                        <div class="overlay-link"><a href="#" class="btn-view"><i class="fa-solid fa-eye"></i> Ver Detalles</a></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">RRHH</span>
+                        <h3>Headcount y Rotación</h3>
+                        <div class="tags"><span>Power BI</span><span>HR Analytics</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal delay-100">
+                    <div class="project-img-wrapper">
+                        <img src="https://placehold.co/600x400/F1F5F9/0B2545?text=Supply+Chain" alt="Logística">
+                        <div class="overlay-link"><a href="#" class="btn-view"><i class="fa-solid fa-eye"></i> Ver Detalles</a></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Logística</span>
+                        <h3>Optimización de Inventarios</h3>
+                        <div class="tags"><span>SQL</span><span>Power BI</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal delay-200">
+                    <div class="project-img-wrapper">
+                        <img src="https://placehold.co/600x400/F1F5F9/0B2545?text=ETL+Pipeline" alt="ETL">
+                        <div class="overlay-link"><a href="#" class="btn-view"><i class="fa-solid fa-eye"></i> Ver Detalles</a></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-cat">Ingeniería de Datos</span>
+                        <h3>ETL y Pipeline de Datos</h3>
+                        <div class="tags"><span>Python</span><span>Azure</span></div>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- CONTACTO & FOOTER -->
+    <section class="cta-section">
+        <div class="container reveal">
+            <h2>¿Listo para potenciar tu empresa con datos?</h2>
+            <p>Agenda una reunión exploratoria y veamos cómo optimizar tus procesos.</p>
+            <a href="https://linkedin.com/in/ijarpa" target="_blank" class="btn btn-light btn-lg">Contactar por LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+
     <footer class="footer" id="contacto">
         <div class="container footer-content">
-            <div class="footer-social">
-                <a href="https://linkedin.com/in/ijarpa" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" style="font-size:2.3rem;color:#00d8ff;"></i></a>
-                <a href="https://github.com/ijarpa" target="_blank" aria-label="GitHub"><i class="fab fa-github" style="font-size:2.3rem;color:#f8f8f8;"></i></a>
-                <a href="https://instagram.com/ijarpa" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="font-size:2.3rem;color:#ff5eae;"></i></a>
+            <div class="footer-brand">
+                <h3>BI para Todos</h3>
+                <p>Iván Jarpa | Senior Data Analyst</p>
+                <p class="location">Santiago & Chillán, Chile</p>
             </div>
-            <div class="footer-info">
-                <p style="font-size:1.1rem;font-weight:600;color:#fff;">Iván Jarpa | Senior Data Analyst & Ex-Auditor CPA</p>
-                <p style="color:#fff;">Chillán & Santiago, Chile</p>
-                <p style="color:#fff;font-size:1rem;font-weight:500;margin:0;">Correo: <span style="color:#fff;text-decoration:none;">ivanandres.jarpa@gmail.com</span></p>
-                <p style="color:#b3e0ff;font-size:0.95rem;margin-top:0.5em;">© 2026 BI para Todos</p>
+            
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/ijarpa" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ijarpa" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:ivanandres.jarpa@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iván Jarpa. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- JavaScript principal -->
-    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>
 </html>
