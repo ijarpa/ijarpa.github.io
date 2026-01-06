@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": "../../Users/ijarpa/OneDrive - Servicios F. Progreso S.A/PROGRESO/Scripts/cargas_redshift"
+		},
+		{
+			"path": "../../Users/ijarpa/OneDrive - Servicios F. Progreso S.A/General - Control de Gestion/Procesos ETL Control de Gestión"
+		},
+		{
+			"path": "../../Users/ijarpa/OneDrive - Servicios F. Progreso S.A/PROGRESO/Scripts/test_coding"
+		},
+		{
+			"path": "../../Users/ijarpa/OneDrive - Servicios F. Progreso S.A/PROGRESO/2_Power BI TSF/99_cargas_TSF"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "github",
+		"sqltools.connections": [
+			{
+				"ssh": "Disabled",
+				"previewLimit": 50,
+				"server": "172.16.1.115",
+				"port": 5439,
+				"driver": "PostgreSQL",
+				"database": "dwh_sfp",
+				"username": "ijarpa",
+				"password": "Password2023",
+				"name": "dwh_sfp",
+				"group": "Progreso"
+			}
+		]
+	}
+}

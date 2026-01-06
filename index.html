@@ -1,138 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Meta tags SEO y responsive -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BI para Todos - Ivan Jarpa Riquelme</title>
-    <meta name="description" content="Sitio web de Ivan Jarpa Riquelme, Senior Data Analyst y Power BI Developer. Ofrezco servicios de Business Intelligence, análisis de datos y soluciones personalizadas.">
-    <meta name="keywords" content="Business Intelligence, Power BI, Data Analyst, Ivan Jarpa, BI para Todos, Análisis de Datos, SQL, Python">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Iván Jarpa - Senior Data Analyst & Finance Expert. BI para Todos. Automatización, Dashboards y Modelado de Datos.">
+    <meta name="keywords" content="BI para Todos, Iván Jarpa, Data Analyst, Power BI, SQL, Python, Automatización, Finanzas, Analytics Engineering, Portafolio">
+    <meta name="author" content="Iván Jarpa">
+    <title>BI para Todos | Iván Jarpa - Senior Data Analyst</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#inicio" class="logo">BI para Todos</a>
-            <ul>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <nav class="container nav-content">
+            <a href="#" class="logo"><span class="logo-text">BI para Todos</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <a href="#contacto" class="btn cta-nav">Hablemos</a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
+    <script defer src="js/main.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="section-content hero-content">
-                <h1>Ivan Jarpa Riquelme</h1>
-                <h2>Senior Data Analyst | Power BI Developer</h2>
-                <p>Transformando datos en decisiones estratégicas.</p>
-                <a href="#contacto" class="cta-button">Contáctame</a>
+        <!-- HERO SECTION -->
+        <section class="hero hero-bg-overlay" id="inicio">
+            <div class="hero-overlay"></div>
+            <div class="hero-content-centered">
+                <h1>Tus Datos Financieros, Transformados en Estrategia.</h1>
+                <p class="hero-subtitle">
+                    Consultoría en Power BI y Analytics para empresas que buscan decisiones inteligentes.
+                </p>
+                <a href="#servicios" class="btn btn-accent">Ver Servicios</a>
             </div>
-        </section>
-
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <img src="images/servicio_BusinessIntelligence.jpg" alt="Servicio de Business Intelligence">
-                    <h3>Business Intelligence</h3>
-                    <p>Desarrollo de dashboards e informes dinámicos en Power BI para facilitar la toma de decisiones.</p>
+            <div class="hero-cards">
+                <div class="hero-card">
+                    <span class="hero-card-icon">
+                        <!-- Icono gráfico (ejemplo: chart bar) -->
+                        <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><rect x="6" y="18" width="6" height="12" rx="2" fill="#0077B6"/><rect x="15" y="10" width="6" height="20" rx="2" fill="#0B2545"/><rect x="24" y="4" width="6" height="26" rx="2" fill="#0077B6"/></svg>
+                    </span>
+                    <h3>Visualización de Datos</h3>
                 </div>
-                <div class="card">
-                    <img src="images/servicio_AnalisisdeDatos.jpg" alt="Servicio de Análisis de Datos">
-                    <h3>Análisis de Datos</h3>
-                    <p>Análisis de datos financieros y operativos para identificar oportunidades de mejora y optimización.</p>
+                <div class="hero-card">
+                    <span class="hero-card-icon">
+                        <!-- Icono engranaje -->
+                        <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><circle cx="18" cy="18" r="10" stroke="#0077B6" stroke-width="2"/><rect x="14" y="10" width="8" height="16" rx="2" fill="#0B2545"/></svg>
+                    </span>
+                    <h3>Automatización de Procesos</h3>
                 </div>
-                <div class="card">
-                    <img src="images/servicio_aTuMedida.jpg" alt="Servicio de Soluciones a Medida">
-                    <h3>Soluciones a Medida</h3>
-                    <p>Diseño de soluciones personalizadas con Python y SQL para resolver problemas complejos de negocio.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="proyectos">
-            <h2>Proyectos Destacados</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x300/?dashboard,analytics" alt="Proyecto de Automatización de Reportes">
-                    <h3>Automatización de Reportes</h3>
-                    <p>Diseño y desarrollo de múltiples proyectos de reportería dinámica en Power BI.</p>
-                </div>
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x300/?data,model" alt="Proyecto de Optimización de Modelos">
-                    <h3>Optimización de Modelos</h3>
-                    <p>Refinamiento de modelos relacionales y creación de métricas eficientes en Power BI.</p>
-                </div>
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x300/?financial,python" alt="Proyecto de Soluciones Financieras">
-                    <h3>Soluciones Financieras</h3>
-                    <p>Creación de soluciones innovadoras para automatizar procesos financieros en Python.</p>
+                <div class="hero-card">
+                    <span class="hero-card-icon">
+                        <!-- Icono birrete/escuela -->
+                        <svg width="36" height="36" fill="none" viewBox="0 0 36 36"><path d="M18 8L32 14L18 20L4 14L18 8Z" fill="#0077B6"/><rect x="12" y="20" width="12" height="6" rx="2" fill="#0B2545"/></svg>
+                    </span>
+                    <h3>Capacitación Expertos</h3>
                 </div>
             </div>
         </section>
 
-        <section id="sobre-mi">
-            <div class="section-content">
-                <h2>Sobre Mí</h2>
-                <div class="about-container">
-                    <div class="about-image">
-                        <img src="images/aboutMe.jpg" alt="Ivan Jarpa Riquelme">
-                    </div>
-                    <div class="about-text">
-                        <p>Data & Business Analyst con más de 5 años de experiencia convirtiendo datos en acciones estratégicas. Mi enfoque combina creatividad y análisis riguroso para generar un impacto tangible en los resultados del negocio. Estoy comprometido con la innovación continua y me mantengo actualizado con las últimas tendencias y tecnologías en análisis de datos.</p>
-                    </div>
-                </div>
+    <!-- SOBRE MÍ -->
+    <section class="about" id="sobre-mi">
+        <div class="container about-content">
+            <h2>Sobre Mí</h2>
+            <p>"Soy un profesional híbrido. Comencé como Contador Auditor, pero descubrí que los datos podían contar mucho más que solo balances. Hoy ayudo a empresas a anticipar tendencias y optimizar decisiones mediante Analytics Engineering & Business Intelligence"</p>
+            <div class="skills">
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">dbt</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Excel Avanzado</span>
             </div>
-        </section>
-        
-        
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <div class="contact-container">
-                <div class="contact-form">
-                    <form>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
-                        <button type="submit">Enviar Mensaje</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <h3>Información de Contacto</h3>
-                    <p><strong>Email:</strong> ivanandres.jarpa@gmail.com</p>
-                    <p><strong>Ubicación:</strong> <a href="https://www.google.com/maps/place/Chill%C3%A1n,+Nuble,+Chile" target="_blank">Chillán, Chile</a></p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.youtube.com/@BIparatodos.ijarpa" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"></path><path d="m10 15 5-3-5-3z"></path></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/ijarpa/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-            <a href="https://www.instagram.com/bi.paratodos" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
-            </a>
-            <a href="https://github.com/ijarpa" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-            </a>
         </div>
-        <p>&copy; 2025 Ivan Jarpa Riquelme - BI para Todos</p>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <i class="fa-solid fa-gears service-icon"></i>
+                    <h3>Automatización de Reportes</h3>
+                    <p>Ahorra horas de trabajo manual automatizando tus reportes financieros y operativos.</p>
+                </article>
+                <article class="service-card">
+                    <i class="fa-solid fa-chart-line service-icon"></i>
+                    <h3>Dashboards Financieros</h3>
+                    <p>Visualiza tus KPIs en tiempo real para una toma de decisiones ágil y fundamentada.</p>
+                </article>
+                <article class="service-card">
+                    <i class="fa-solid fa-chalkboard-user service-icon"></i>
+                    <h3>Consultoría & Capacitación</h3>
+                    <p>Formación en Power BI y SQL para equipos (BI para Todos).</p>
+                </article>
+                <article class="service-card">
+                    <i class="fa-solid fa-database service-icon"></i>
+                    <h3>Modelado de Datos</h3>
+                    <p>Arquitecturas de datos robustas y escalables.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section class="portfolio" id="portafolio">
+        <div class="container">
+            <h2>Portafolio</h2>
+            <div class="portfolio-grid">
+                <!-- Proyecto 1 -->
+                <article class="portfolio-card">
+                    <img src="images/placeholder1.jpg" alt="Dashboard de Control de Gestión" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>Dashboard de Control de Gestión</h3>
+                        <div class="portfolio-tags">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 2 -->
+                <article class="portfolio-card">
+                    <img src="images/placeholder2.jpg" alt="Automatización de Tesorería" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>Automatización de Tesorería</h3>
+                        <div class="portfolio-tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 3 -->
+                <article class="portfolio-card">
+                    <img src="images/placeholder3.jpg" alt="Análisis de Ventas Retail" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <h3>Análisis de Ventas Retail</h3>
+                        <div class="portfolio-tags">
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO & FOOTER -->
+    <footer class="footer" id="contacto">
+        <div class="container footer-content">
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/ijarpa" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" style="font-size:2.3rem;color:#00d8ff;"></i></a>
+                <a href="https://github.com/ijarpa" target="_blank" aria-label="GitHub"><i class="fab fa-github" style="font-size:2.3rem;color:#f8f8f8;"></i></a>
+                <a href="https://instagram.com/ijarpa" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="font-size:2.3rem;color:#ff5eae;"></i></a>
+            </div>
+            <div class="footer-info">
+                <p style="font-size:1.1rem;font-weight:600;color:#fff;">Iván Jarpa | Senior Data Analyst & Ex-Auditor CPA</p>
+                <p style="color:#fff;">Chillán & Santiago, Chile</p>
+                <p style="color:#fff;font-size:1rem;font-weight:500;margin:0;">Correo: <span style="color:#fff;text-decoration:none;">ivanandres.jarpa@gmail.com</span></p>
+                <p style="color:#b3e0ff;font-size:0.95rem;margin-top:0.5em;">© 2026 BI para Todos</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript principal -->
+    <script src="js/scripts.js"></script>
 </body>
+</html>
 </html>
