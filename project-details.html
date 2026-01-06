@@ -4,84 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle de Proyecto | BI para Todos</title>
-    <meta name="description" content="Caso de estudio de proyecto de BI por Iván Jarpa.">
+    <meta name="description" content="Caso de estudio de Business Intelligence y Data Analytics.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.ico">
-    <script defer src="js/main.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="navbar">
-        <div class="container nav-content">
+        <nav class="container nav-content">
             <a href="index.html" class="logo">
-                <span class="logo-icon">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="3" y="15" width="4" height="10" rx="1.5" fill="#0077B6"/>
-                        <rect x="10" y="9" width="4" height="16" rx="1.5" fill="#0B2545"/>
-                        <rect x="17" y="4" width="4" height="21" rx="1.5" fill="#0077B6"/>
-                    </svg>
-                </span>
-                <span class="logo-text">BI para Todos</span>
+                <i class="fa-solid fa-chart-simple logo-icon"></i>
+                BI para Todos
             </a>
-            <nav class="nav-links">
-                <a href="index.html#inicio">Inicio</a>
-                <a href="index.html#sobre-mi">Sobre Mí</a>
-                <a href="index.html#servicios">Servicios</a>
-                <a href="index.html#portafolio">Portafolio</a>
-                <a href="#" class="disabled">Blog</a>
-                <a href="index.html#contacto">Contacto</a>
-                <a href="index.html#contacto" class="btn cta">Agendar Asesoría</a>
-            </nav>
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <span></span><span></span><span></span>
-            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#portafolio">Volver al Portafolio</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="index.html#contacto" class="btn btn-primary">Hablemos</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <header class="project-header">
+        <div class="container">
+            <span class="badge">Finanzas & Control</span>
+            <h1>Dashboard de Control de Gestión & KPIs</h1>
+            <div class="project-meta">
+                <span><i class="fa-regular fa-calendar"></i> 2025</span>
+                <span><i class="fa-solid fa-user-tie"></i> Cliente Corporativo</span>
+                <span><i class="fa-solid fa-code-branch"></i> Business Intelligence</span>
+            </div>
         </div>
     </header>
-    <main class="project-detail-main">
-        <div class="container project-detail-container">
-            <div class="project-detail-header">
-                <h1>Nombre del Proyecto</h1>
-                <span class="project-category">Categoría</span>
-                <div class="project-tags">
-                    <span>Power BI</span><span>SQL</span><span>Python</span>
+
+    <main class="section project-body">
+        <div class="container project-grid-layout">
+            
+            <div class="project-content">
+                <div class="content-block">
+                    <h3><i class="fa-solid fa-triangle-exclamation text-accent"></i> El Desafío</h3>
+                    <p>La empresa dependía de múltiples archivos Excel manuales para consolidar sus estados financieros, lo que generaba un retraso de 10 días en el cierre mensual y errores recurrentes en la data.</p>
                 </div>
-            </div>
-            <div class="project-detail-body">
-                <div class="project-detail-image">
-                    <img src="https://placehold.co/600x400?text=Imagen+del+Proyecto" alt="Imagen del proyecto">
-                </div>
-                <div class="project-detail-description">
-                    <h2>Resumen</h2>
-                    <p>Descripción breve del caso de estudio, el desafío del cliente, la solución implementada y el impacto logrado. <br><br> Puedes personalizar este texto para cada proyecto real.</p>
-                    <h3>Tecnologías Utilizadas</h3>
-                    <ul>
-                        <li>Power BI</li>
-                        <li>SQL Server</li>
-                        <li>Python</li>
-                        <li>dbt</li>
+
+                <div class="content-block">
+                    <h3><i class="fa-solid fa-lightbulb text-accent"></i> La Solución</h3>
+                    <p>Implementé una arquitectura de datos moderna utilizando <strong>SQL Server</strong> como almacén central y <strong>Power BI</strong> para la visualización.</p>
+                    <ul class="check-list">
+                        <li>Extracción automática de datos (ETL) con Python.</li>
+                        <li>Modelado de datos en estrella para optimizar DAX.</li>
+                        <li>Diseño de dashboard interactivo con Drill-through.</li>
                     </ul>
-                    <a href="index.html#portafolio" class="btn btn-outline">← Volver al Portafolio</a>
                 </div>
+
+                <div class="content-block result-box">
+                    <h3><i class="fa-solid fa-trophy"></i> Impacto y Resultados</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">90%</span>
+                            <span class="stat-desc">Reducción tiempo de reporte</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-desc">Errores manuales</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Real-Time</span>
+                            <span class="stat-desc">Acceso a KPIs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="index.html#portafolio" class="btn btn-outline-dark">← Ver otros proyectos</a>
             </div>
+
+            <aside class="project-sidebar">
+                <div class="project-main-image">
+                    <img src="https://placehold.co/800x600/F1F5F9/0B2545?text=Dashboard+Power+BI" alt="Captura del Dashboard">
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h4>Tech Stack</h4>
+                    <div class="tech-tags">
+                        <span class="tag"><i class="fa-solid fa-bolt"></i> Power BI</span>
+                        <span class="tag"><i class="fa-solid fa-database"></i> SQL Server</span>
+                        <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="tag"><i class="fa-solid fa-calculator"></i> DAX Avanzado</span>
+                    </div>
+                </div>
+            </aside>
+
         </div>
     </main>
-    <section class="cta-final">
-        <div class="container cta-content">
-            <h2>¿Listo para potenciar tu empresa con datos?</h2>
-            <a href="https://www.linkedin.com/in/ijarpa/" target="_blank" class="btn btn-light">Hablemos por LinkedIn</a>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Tienes un desafío similar?</h2>
+            <p>Transformemos tus datos en activos estratégicos.</p>
+            <a href="https://linkedin.com/in/ijarpa" target="_blank" class="btn btn-light">Contactar en LinkedIn</a>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container footer-content">
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/ijarpa/" target="_blank" aria-label="LinkedIn"><img src="https://placehold.co/32x32?text=IN" alt="LinkedIn"></a>
-                <a href="https://github.com/ijarpa" target="_blank" aria-label="GitHub"><img src="https://placehold.co/32x32?text=GH" alt="GitHub"></a>
-                <a href="https://www.youtube.com/@ijarpa" target="_blank" aria-label="YouTube"><img src="https://placehold.co/32x32?text=YT" alt="YouTube"></a>
+            <div class="footer-brand">
+                <h3>BI para Todos</h3>
+                <p>&copy; 2026 Iván Jarpa.</p>
             </div>
-            <div class="footer-copy">
-                &copy; 2026 Iván Jarpa. Todos los derechos reservados.
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
